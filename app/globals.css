@@ -148,3 +148,10 @@
     text-wrap: pretty;
   }
 }
+
+.bg-circuit {
+  background-image: url("/circuit-board.svg"), linear-gradient(to bottom right, #f0f9ff, #f0f9ff);
+  background-repeat: repeat;
+  background-size: 600px;
+  background-position: center;
+}

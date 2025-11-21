@@ -43,7 +43,7 @@ export function ProblemSolutionSection() {
             video, sensor, IoT, and telematics data, we create live digital twin maps that provide continuous
             situational awareness and predictive insights.
           </p>
-          <div className="mt-8 inline-flex items-center px-6 py-3 bg-[#723C70]/10 rounded-full">
+          <div className="mt-8 inline-flex items-center px-6 py-3 bg-[#f0f9ff]/100 rounded-full">
             <span className="text-primary font-semibold">Mission:</span>
             <span className="ml-2 text-black">
               Deliver automated actionable operational intelligence for a safe, smart, and connected future.
@@ -51,8 +51,20 @@ export function ProblemSolutionSection() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-[#723C70]/15 to-[#B7094C]/5 rounded-3xl p-12 mb-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Introducing MetaCiti™</h3>
+        <div
+            className="rounded-3xl p-12 mb-16 bg-white/60 bg-blend-overlay"
+            style={{
+              backgroundImage:
+                  'linear-gradient(to bottom right, rgba(240,249,255,0.70), rgba(240,249,255,0.70)), url(/circuit-board.svg)',
+              backgroundSize: '600px',
+              backgroundRepeat: 'repeat',
+              backgroundPosition: 'center',
+            }}
+        >
+          <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">
+            Introducing MetaCiti™
+          </h3>
+
           <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto text-pretty leading-relaxed">
             MetaCiti™ is an automated incident detection and digital twin platform designed for cities and
             municipalities seeking operational intelligence at scale. The platform fuses live video feeds and sensor
@@ -60,6 +72,7 @@ export function ProblemSolutionSection() {
             awareness across transportation and mobility systems.
           </p>
         </div>
+
 
         <div className="text-center mb-12">
           <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">Who We Serve</h3>
@@ -69,10 +82,12 @@ export function ProblemSolutionSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 bg-gray-50/50 backdrop-blur-sm">
+          <Card
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-0 bg-gray-50/50 backdrop-blur-sm">
             <CardContent className="p-6 text-center">
-              <div className="mb-4 inline-flex p-4 bg-red-600/10 rounded-full group-hover:bg-[#723C70]/20 group-hover:text-[#A01A58]/90 transition-colors duration-300 text-red-600">
-                <Building2Icon />
+              <div
+                  className="mb-4 inline-flex p-4 bg-red-600/10 rounded-full group-hover:bg-[#723C70]/20 group-hover:text-[#A01A58]/90 transition-colors duration-300 text-red-600">
+                <Building2Icon/>
               </div>
               <h4 className="text-lg font-semibold mb-2 text-red-600 group-hover:text-[#A01A58]/90 transition-colors">Municipal Traffic & Transportation</h4>
               <p className="text-sm text-gray-600">

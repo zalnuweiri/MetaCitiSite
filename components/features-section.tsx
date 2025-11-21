@@ -155,7 +155,7 @@ export function FeaturesSection() {
                 </div>
 
                 {/* Benefits section - unchanged */}
-                <div className="mt-20 bg-gradient-to-br from-[#723C70]/15 to-[#B7094C]/5 rounded-3xl p-12">
+                <div className="mt-20 bg-gradient-to-br from-[#f0f9ff]/100  to-[#f0f9ff]/100 rounded-3xl p-12">
                     <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Benefits</h3>
                     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                         <BenefitItem text="Faster incident response and resource deployment" />

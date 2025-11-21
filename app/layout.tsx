@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Suspense } from "react"
 import "./globals.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 export const metadata: Metadata = {
   title: "Ottonomi AI - Autonomous Traffic Intelligence. Powered by AI.",
