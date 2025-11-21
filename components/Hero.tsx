@@ -10,42 +10,59 @@ export function Hero() {
       {/* NAVBAR */}
       <Navbar/>
 
-      {/* Wave Background */}
+      {/* Flowing Wave Elements - Inspired by the dark hero */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Base gradient background - Magenta Dream palette */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#B7094C] via-[#723C70] to-[#0091AD]" />
+        {/* Large flowing wave swoosh */}
+        <svg
+            className="absolute bottom-0 left-0 w-full h-auto"
+            viewBox="0 0 1440 600"
+            preserveAspectRatio="none"
+            style={{ transform: 'translateY(20%)' }}
+        >
+          {/* Background wave layer */}
+          <path
+              d="M0,400 Q360,300 720,350 T1440,400 L1440,600 L0,600 Z"
+              fill="#dbeafe"
+              opacity="0.6"
+          />
+          {/* Mid wave layer */}
+          <path
+              d="M0,420 Q360,320 720,370 T1440,420 L1440,600 L0,600 Z"
+              fill="#bfdbfe"
+              opacity="0.7"
+          />
+          {/* Front wave layer */}
+          <path
+              d="M0,450 Q360,350 720,400 T1440,450 L1440,600 L0,600 Z"
+              fill="#93c5fd"
+              opacity="0.5"
+          />
+        </svg>
 
-        {/* Layered waves */}
+        {/* Diagonal accent swoosh from top right */}
         <svg
-          className="absolute bottom-0 left-0 w-full h-auto opacity-90"
-          viewBox="0 0 1440 400"
-          preserveAspectRatio="none"
+            className="absolute top-0 right-0 w-2/3 h-full opacity-30"
+            viewBox="0 0 800 800"
+            preserveAspectRatio="none"
         >
           <path
-            fill="#1780A1"
-            d="M0,224L48,213.3C96,203,192,181,288,186.7C384,192,480,224,576,234.7C672,245,768,235,864,213.3C960,192,1056,160,1152,154.7C1248,149,1344,171,1392,181.3L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z"
-          ></path>
+              d="M800,0 Q600,200 400,300 T0,500 L0,0 L800,0 Z"
+              fill="url(#gradient1)"
+          />
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.1" />
+              <stop offset="100%" stopColor="#0ea5e9" stopOpacity="0.05" />
+            </linearGradient>
+          </defs>
         </svg>
-        <svg
-          className="absolute bottom-0 left-0 w-full h-auto opacity-80"
-          viewBox="0 0 1440 400"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#2E6F95"
-            d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,229.3C672,235,768,213,864,213.3C960,213,1056,235,1152,229.3C1248,224,1344,192,1392,176L1440,160L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z"
-          ></path>
-        </svg>
-        <svg
-          className="absolute bottom-0 left-0 w-full h-auto"
-          viewBox="0 0 1440 400"
-          preserveAspectRatio="none"
-        >
-          <path
-            fill="#0091AD"
-            d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,208C1248,192,1344,192,1392,192L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z"
-          ></path>
-        </svg>
+
+        {/* Subtle radial gradients for depth */}
+        <div className="absolute top-1/4 -right-32 w-96 h-96 bg-gradient-radial from-[#60a5fa]/20 to-transparent rounded-full blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-radial from-[#3b82f6]/15 to-transparent rounded-full blur-3xl" />
+
+        {/* Accent red glow for brand color */}
+        <div className="absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-radial from-[#dc2626]/10 to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -60,11 +77,11 @@ export function Hero() {
             </div>
 
             <div className="space-y-6">
-              <h1 className="text-white font-semibold text-2xl">
+              <h1 className="text-black font-semibold text-5xl 2xl:text-6xl">
                 Transform Your Operations with Real-Time
                 Intelligence
               </h1>
-              <p className="text-white max-w-xl">
+              <p className="text-black max-w-xl text-lg lg:text-xl">
                 Harness the power of AI and computer vision to
                 unlock actionable insights from your data. Make
                 smarter decisions faster with our
@@ -94,16 +111,16 @@ export function Hero() {
 
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-gray-200">
-              <p className="text-white mb-4">
+              <p className="text-black mb-4">
                 Trusted by industry leaders
               </p>
               <div className="flex items-center gap-8">
-                <div className="text-white text-bold">ACME Corp</div>
-                <div className="text-white text-bold">TechGlobal</div>
-                <div className="text-white text-bold">
+                <div className="text-black text-bold">ACME Corp</div>
+                <div className="text-black text-bold">TechGlobal</div>
+                <div className="text-black text-bold">
                   Innovate Inc
                 </div>
-                <div className="text-white text-bold">DataFlow</div>
+                <div className="text-black text-bold">DataFlow</div>
               </div>
             </div>
           </div>
