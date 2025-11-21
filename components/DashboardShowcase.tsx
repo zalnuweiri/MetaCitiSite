@@ -45,7 +45,7 @@ export function DashboardShowcase() {
       </div>
 
       {/* Main Dashboard Display */}
-      <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#723C70]/20 to-[#455E89]/20 shadow-2xl border border-[#455E89]/30">
+      <div className="relative h-[360px] rounded-2xl overflow-hidden bg-gradient-to-br from-[#723C70]/20 to-[#455E89]/20 shadow-2xl border border-[#455E89]/30">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -58,18 +58,18 @@ export function DashboardShowcase() {
             <ImageWithFallback
               src={dashboards[currentIndex].image}
               alt={dashboards[currentIndex].title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain bg-black/5"
             />
             
             {/* Overlay Gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            
+
             {/* Metric Card */}
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-[#0091AD]/30"
+              className="absolute bottom-6 right-13 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-[#0091AD]/30"
             >
               <div className="text-slate-900">{dashboards[currentIndex].metrics.value}</div>
               <div className="text-slate-600">{dashboards[currentIndex].metrics.label}</div>
