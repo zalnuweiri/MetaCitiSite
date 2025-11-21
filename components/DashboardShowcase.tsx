@@ -8,19 +8,19 @@ const dashboards = [
   {
     id: 1,
     title: "Analytics Dashboard",
-    image: "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwZGFzaGJvYXJkJTIwYW5hbHl0aWNzfGVufDF8fHx8MTc2MzQ1MjA4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "dash1.png",
     metrics: { value: "98.7%", label: "Accuracy" }
   },
   {
     id: 2,
     title: "Smart City Monitoring",
-    image: "https://images.unsplash.com/photo-1699602050604-698045645108?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGNpdHklMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MzM5ODkwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "dash2.png",
     metrics: { value: "45K+", label: "Active Sensors" }
   },
   {
     id: 3,
     title: "Data Visualization",
-    image: "https://images.unsplash.com/photo-1762341123514-01ac9f563350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwdmlzdWFsaXphdGlvbiUyMGludGVyZmFjZXxlbnwxfHx8fDE3NjM0MTUzNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: "dash1.png",
     metrics: { value: "Real-time", label: "Processing" }
   }
 ];

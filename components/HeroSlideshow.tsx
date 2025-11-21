@@ -9,15 +9,15 @@ interface Slide {
 
 const slides: Slide[] = [
     {
-        image: "/slide1.webp",
+        image: "/dash1.png",
         caption: "for traffic & mobility analytics",
     },
     {
-        image: "slide4.png",
+        image: "dash2.png",
         caption: "for public transport & new mobility analytics",
     },
     {
-        image: "slide5.png",
+        image: "dash1.png",
         caption: "for road safety & incident detection",
     },
 ];
