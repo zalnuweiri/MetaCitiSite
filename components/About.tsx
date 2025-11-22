@@ -5,7 +5,7 @@ import { Target, Sparkles } from "lucide-react";
 
 export function About() {
     return (
-        <section className="py-24 px-6 lg:px-8 bg-white relative overflow-hidden">
+        <section className="py-15 px-6 lg:px-8 bg-white relative overflow-hidden">
             {/* Decorative background elements */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#0ea5e9]/5 rounded-full blur-3xl" />
@@ -75,7 +75,7 @@ export function About() {
                             </div>
 
                             {/* Description */}
-                            <p className="text-gray-700 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed ml-10">
                                 MetaCiti™ is an automated incident detection and operational platform designed for cities and municipalities needing enterprise intelligence at scale. They are intelligent operations teams and sensor data into a real-time digital twin map of urban areas, providing operators with continuous situational awareness across transportation and mobility systems.
                             </p>
 
@@ -86,7 +86,7 @@ export function About() {
                 </motion.div>
 
                 {/* Bottom decorative line */}
-                <div className="flex items-center justify-center mt-12 gap-2">
+                <div className="flex items-center justify-center mt-10 gap-2">
                     <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#0ea5e9]/50" />
                     <div className="w-2 h-2 rounded-full bg-[#0ea5e9]" />
                     <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#0ea5e9]/50" />
