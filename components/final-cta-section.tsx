@@ -1,75 +1,91 @@
+"use client";
+
+import { motion } from 'motion/react';
+import { ArrowRight, CheckCircle2, Calendar } from 'lucide-react';
+import { Button } from './ui/button';
+
 export function FinalCtaSection() {
   return (
-      <section className="py-32 relative overflow-hidden bg-gradient-to-br from-[#723C70] via-[#534D7D] to-[#455E89] text-white">
+      <section className="py-15 lg:py-20 bg-gradient-to-br from-[#B7094C] via-[#723C70] to-[#0091AD] relative overflow-hidden">
+        {/* Background pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
 
-        {/* Decorative blurred blobs from CTA #1 */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#B7094C]/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#0091AD]/20 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent opacity-30" />
+        <div className="container mx-auto px-6 lg:px-16 relative z-10">
+          <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-5xl mx-auto text-center"
+          >
+            <h2 className="text-5xl lg:text-6xl xl:text-7xl text-white mb-8 tracking-tight leading-tight">
+              Ready to Transform Your City's Mobility?
+            </h2>
 
-        <div className="relative max-w-5xl mx-auto px-6 text-center z-10">
+            <p className="text-xl lg:text-2xl text-white/90 mb-16 leading-relaxed max-w-3xl mx-auto">
+              See how MetaCiti can help you improve safety, optimize operations,
+              and make data-driven decisions for your urban network.
+            </p>
 
-          {/* Top pill (keep structure, apply new theme) */}
-          <div className="inline-flex items-center px-4 py-2 mb-10 bg-white/10 backdrop-blur-md rounded-full text-sm border border-white/10">
-            <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse" />
-            Transform Your City's Operations Today
-          </div>
+            <div className="flex flex-wrap justify-center gap-6 mb-16">
+              <div className="flex items-center gap-3 text-white">
+                <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+                <span className="text-lg">Free consultation</span>
+              </div>
+              <div className="flex items-center gap-3 text-white">
+                <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+                <span className="text-lg">Custom demo</span>
+              </div>
+              <div className="flex items-center gap-3 text-white">
+                <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
+                <span className="text-lg">No commitment</span>
+              </div>
+            </div>
 
-          {/* Main Heading */}
-          <h2 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
-            From Reactive Monitoring
-            <br />
-            <span className="text-white/90">to Proactive Operations</span>
-          </h2>
-
-          {/* Subtext */}
-          <p className="text-xl md:text-2xl mb-16 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Join forward-thinking municipalities using MetaCiti™ to build safer, smarter urban environments.
-          </p>
-
-          {/* CTA Buttons — same structure, new theme */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <button className="px-10 py-6 text-lg font-bold rounded-xl bg-gradient-to-r from-[#0091AD] to-[#1780A1] text-white shadow-xl hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 inline-flex items-center gap-3 group">
-              <svg
-                  className="w-6 h-6 group-hover:rotate-12 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+            <div className="flex flex-wrap justify-center gap-6">
+              <Button
+                  size="lg"
+                  className="bg-white hover:bg-gray-50 text-[#723C70] px-12 shadow-2xl group text-lg h-16 transition-all duration-300 hover:scale-105"
               >
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" strokeWidth="2" />
-                <line x1="16" y1="2" x2="16" y2="6" strokeWidth="2" />
-                <line x1="8" y1="2" x2="8" y2="6" strokeWidth="2" />
-                <line x1="3" y1="10" x2="21" y2="10" strokeWidth="2" />
-              </svg>
-              Request Demo
-              <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+                Request Demo
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
 
-            <button className="px-10 py-6 text-lg font-semibold rounded-xl border border-white/30 text-white bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300">
-              Watch Platform Tour
-            </button>
-          </div>
-
-          {/* Highlight Cards — same structure, new theme */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl text-center">
-              <div className="text-4xl font-bold mb-2 text-white">30 min</div>
-              <div className="text-white/80 text-sm">Free Platform Demo</div>
+              <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white text-red-600 hover:bg-white/10 px-12 text-lg h-16 transition-all duration-300 hover:scale-105"
+              >
+                <Calendar className="mr-2 h-5 w-5" />
+                Schedule Call
+              </Button>
             </div>
 
-            <div className="p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl text-center">
-              <div className="text-4xl font-bold mb-2 text-white">0</div>
-              <div className="text-white/80 text-sm">Commitment Required</div>
-            </div>
-
-            <div className="p-8 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-xl text-center">
-              <div className="text-4xl font-bold mb-2 text-white">100%</div>
-              <div className="text-white/80 text-sm">Custom Solution</div>
-            </div>
-          </div>
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="mt-20 pt-16 border-t border-white/20"
+            >
+              <div className="grid md:grid-cols-3 gap-12 text-center">
+                <div>
+                  <div className="text-5xl lg:text-6xl text-white mb-3">500+</div>
+                  <div className="text-white/80 text-lg">Cities Deployed</div>
+                </div>
+                <div>
+                  <div className="text-5xl lg:text-6xl text-white mb-3">10M+</div>
+                  <div className="text-white/80 text-lg">Daily Detections</div>
+                </div>
+                <div>
+                  <div className="text-5xl lg:text-6xl text-white mb-3">99.9%</div>
+                  <div className="text-white/80 text-lg">Accuracy Rate</div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
-  )
+  );
 }

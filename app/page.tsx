@@ -7,7 +7,11 @@ import { FinalCtaSection } from "@/components/final-cta-section"
 import { Footer } from "@/components/footer"
 import { Hero } from "@/components/Hero"
 import { ValueProps } from "@/components/ValueProps";
-import {About} from "@/components/About";
+import { About } from "@/components/About";
+import { BenefitsSection } from "@/components/benefits";
+import { SectorsSection } from "@/components/SectorsSection"
+import { CapabilitiesSection } from "@/components/CapabilitiesSection";
+import { UnifiedDashboard } from "@/components/UnifiedDashboard";
 
 
 
@@ -16,11 +20,22 @@ export default function HomePage() {
     <main className="min-h-screen">
       <Hero />
         <About />
-        <ValueProps />
-      <ProblemSolutionSection />
-      <FeaturesSection />
-      <SocialProofSection />
-      <HowItWorksSection />
+        <CapabilitiesSection />
+        <SectorsSection />
+        {/*Should choose to keep either valueProps section or Unified dash section
+        advantage of former is that you can use it to show video and stats
+        latter adv. is that it contains content given directly from Dr Hussein
+         Regardless which one we choose, this one should have a diff background to
+         break up the monotony of the white*/}
+        {/*<ValueProps />*/}
+        <UnifiedDashboard  image={"testnmifile.webp"}/>
+        {/*<ProblemSolutionSection />*/}
+        {/*<FeaturesSection />*/}
+      <BenefitsSection />
+        {/*<SocialProofSection />*/}
+        {/*I would personally get rid of "how it works", esp bcz dr hussein
+        mentioned it should be sort of unclear*/}
+        {/*<HowItWorksSection />*/}
       <FinalCtaSection />
       <Footer />
     </main>

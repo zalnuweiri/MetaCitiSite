@@ -36,7 +36,7 @@ export function DashboardShowcase() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mt-10">
       {/* Background Decorative Layer */}
       <div className="absolute inset-0 -m-8">
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[#0091AD]/30 to-[#1780A1]/20 rounded-full blur-3xl opacity-50" />
@@ -44,8 +44,31 @@ export function DashboardShowcase() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-[#723C70]/10 to-[#0091AD]/10 rounded-full blur-3xl opacity-30" />
       </div>
 
-      {/* Main Dashboard Display */}
-      <div className="relative h-[360px] rounded-2xl overflow-hidden bg-gradient-to-br from-[#723C70]/20 to-[#455E89]/20 shadow-2xl border border-[#455E89]/30">
+        {/* Metric Card */}
+        <motion.div
+            initial={{ y: -10, opacity: 0 }}
+            animate={{ y: -20, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
+            className="
+    absolute -top-13.5 left-0
+    px-10 py-3
+    rounded-2xl
+    backdrop-blur-xl
+    border border-white/40
+    bg-white/70
+    shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+  "
+        >
+            <div className="text-slate-900 font-semibold text-lg">
+                {dashboards[currentIndex].metrics.value}
+            </div>
+            <div className="text-slate-700 text-sm">
+                {dashboards[currentIndex].metrics.label}
+            </div>
+        </motion.div>
+
+        {/* Main Dashboard Display */}
+      <div className="relative h-[300px] rounded-2xl overflow-hidden bg-gradient-to-br from-[#723C70]/20 to-[#455E89]/20 shadow-2xl border border-[#455E89]/30">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -54,7 +77,7 @@ export function DashboardShowcase() {
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.6 }}
             className="absolute inset-0"
-          >
+            >
             <ImageWithFallback
               src={dashboards[currentIndex].image}
               alt={dashboards[currentIndex].title}
@@ -65,7 +88,7 @@ export function DashboardShowcase() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
             {/* Metric Card */}
-            <motion.div
+            {/*<motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
@@ -73,7 +96,7 @@ export function DashboardShowcase() {
             >
               <div className="text-slate-900">{dashboards[currentIndex].metrics.value}</div>
               <div className="text-slate-600">{dashboards[currentIndex].metrics.label}</div>
-            </motion.div>
+            </motion.div>*/}
           </motion.div>
         </AnimatePresence>
 

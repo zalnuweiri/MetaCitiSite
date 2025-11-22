@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { OttonomiLogo } from "@/components/ottonomi-logo";
+//import { OttonomiLogo } from "@/components/ottonomi-logo";
+import Image from "next/image";
 
 export function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,7 +16,13 @@ export function Navbar() {
 
                     {/* Logo Area */}
                     <div className="flex items-center gap-3">
-                        <OttonomiLogo size="md" />
+                        <Image
+                            src="/ottologo.png"
+                            alt="Ottonomi Logo"
+                            width={150}  // adjust as needed
+                            height={50}  // adjust as needed
+                            className="object-contain"
+                        />
                         <span className="text-gray-900 font-semibold text-lg tracking-tight">
             </span>
                     </div>

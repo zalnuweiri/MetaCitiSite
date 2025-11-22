@@ -120,7 +120,7 @@ export function FeaturesSection() {
                                 <div
                                     className="
                     absolute inset-0
-                    bg-gradient-to-br from-[#E8D2EA] via-[#F5E7F2] to-white
+                    bg-gradient-to-br from-[#f0f9ff] via-[#F5E7F2] to-white
                     opacity-0 group-hover:opacity-100
                     transition-opacity
                   "
@@ -140,7 +140,14 @@ export function FeaturesSection() {
                                         <feature.icon />
                                     </motion.div>
 
-                                    <h3 className="text-xl font-semibold mb-3 text-[#723C70]">
+                                    <h3
+                                        className="
+                                                    text-xl font-semibold mb-3
+                                                    text-red-600               /* default color */
+                                                    transition-colors duration-300
+                                                    group-hover:text-[#723C70] /* hover color */
+                                                  "
+                                                >
                                         {feature.title}
                                     </h3>
 
@@ -154,7 +161,7 @@ export function FeaturesSection() {
                     ))}
                 </div>
 
-                {/* Benefits section - unchanged */}
+                {/* Benefits section - unchanged
                 <div className="mt-20 bg-gradient-to-br from-[#f0f9ff]/100  to-[#f0f9ff]/100 rounded-3xl p-12">
                     <h3 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Benefits</h3>
                     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -163,7 +170,7 @@ export function FeaturesSection() {
                         <BenefitItem text="Safer, more reliable streets for all road users" />
                         <BenefitItem text="Data-driven infrastructure planning and investment decisions" />
                     </div>
-                </div>
+                </div>*/}
             </div>
         </section>
     );
