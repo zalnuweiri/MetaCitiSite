@@ -6,10 +6,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
 export const metadata: Metadata = {
-  title: "Ottonomi AI - Autonomous Traffic Intelligence. Powered by AI.",
+  title: "Ottonomi AI",
   description:
-    "Transform traffic data into autonomous insights and real-time control for smarter, safer cities with Ottonomi AI.",
-  generator: "v0.app",
+      "Transform traffic data into autonomous insights and real-time control for smarter, safer cities with Ottonomi AI.",
+  icons: {
+    icon: "/favicon.png",     // or /favicon.ico
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 }
 
 export default function RootLayout({
