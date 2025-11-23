@@ -8,17 +8,34 @@ import {
     BarChart3,
     Map,
     Search,
-    Layers
+    Layers,
+    Target,
+    Repeat1,
+    CarFront
 } from "lucide-react";
 
 const capabilities = [
+   /* { icon: Layers, title: "Platform Integration", description: "Integration with VMS, control rooms, and IoT platforms" },
     { icon: AlertTriangle, title: "Incident Detection", description: "Stalled vehicles, debris, and wrong-way driving alerts" },
     { icon: UserX, title: "Unsafe Driving Detection", description: "Real-time identification of dangerous driving behaviors" },
     { icon: Truck, title: "Multi-Modal Monitoring", description: "Track cars, trucks, buses, and pedestrian movement" },
     { icon: BarChart3, title: "Traffic Analytics", description: "Congestion, flow, density, and volume analytics" },
     { icon: Map, title: "Activity Heatmaps", description: "Visual heatmaps of traffic activity and safety events" },
     { icon: Search, title: "Visual Search", description: "Search and review historical video and event data" },
-    { icon: Layers, title: "Platform Integration", description: "Integration with VMS, control rooms, and IoT platforms" },
+    { icon: Layers, title: "Platform Integration", description: "Integration with VMS, control rooms, and IoT platforms" },*/
+
+    /*Need to revise below icons so that they match as much as possible*/
+
+    { icon: CarFront, title: "Stalled Vehicles", description: "Instant detection of stopped or disabled vehicles" },
+    { icon: AlertTriangle, title: "Debris Alerts", description: "Real-time identification of obstacles on the roadway" },
+    { icon: UserX, title: "Wrong-Way Driving", description: "Immediate alerts for dangerous counter-flow movement" },
+    { icon: Truck, title: "Flow Analytics", description: "Live insights into traffic speed, volume, and density" },
+    { icon: BarChart3, title: "Congestion Maps", description: "Clear visualization of bottlenecks across the network" },
+    { icon: Map, title: "Movement Tracking", description: "Multi-modal tracking of vehicles, pedestrians, and cyclists" },
+    { icon: Target, title: "Heatmaps", description: "Activity heatmaps showing high-traffic zones at a glance" },
+    { icon: Repeat1, title: "Event Replay", description: "Timestamped video playback for incident reconstruction" },
+    { icon: Layers, title: "VMS Integration", description: "Direct connection to roadside signs for automated messaging" },
+
 ];
 
 export function CapabilitiesSection() {

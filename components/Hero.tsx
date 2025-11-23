@@ -72,22 +72,20 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-50 rounded-full border border-cyan-200">
               <div className="w-2 h-2 bg-[#0091AD] rounded-full animate-pulse" />
               <span className="text-[#1780A1]">
-                AI-Powered Intelligence Platform
+                Turn Cameras into Instant Intelligence for Urban Mobility
               </span>
             </div>
 
             <div className="space-y-6">
               <h1 className="text-black font-semibold text-5xl 2xl:text-6xl">
-                Transform Your Operations with Real-Time
-                Intelligence
+                MetaCiti — SaaS Platform for Urban Mobility & Traffic Intelligence
               </h1>
               <p className="text-black max-w-xl text-lg lg:text-xl">
-                Harness the power of AI and computer vision to
-                unlock actionable insights from your data. Make
-                smarter decisions faster with our
-                enterprise-grade analytics platform. Transform your
-                city's traffic operations with automated incident detection,
-                live digital twin mapping, and predictive analytics
+                MetaCiti AI transforms existing city and highway cameras into a real-time engine for safety alerts,
+                mobility analytics, incident detection, and live congestion mapping. It continuously analyzes
+                intersections, corridors, districts, and campus roads, giving operators the awareness to react faster
+                and optimize network performance. All events, alerts, and flow patterns appear on Live Digital Twin
+                Maps, delivering a multiscale view of the road network—from a single junction to an entire city.
               </p>
             </div>
 

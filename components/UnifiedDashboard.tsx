@@ -19,7 +19,7 @@ export function UnifiedDashboard({ image }: UnifiedDashboardProps) {
     ];
 
     return (
-        <section className="py-8 lg:py-15 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+        <section className="py-8 lg:py-15 bg-gradient-to-br from-red-900 via-red-900 to-red-900 relative overflow-hidden">
             {/* Background pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
