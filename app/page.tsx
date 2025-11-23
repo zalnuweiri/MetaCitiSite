@@ -19,7 +19,8 @@ export default function HomePage() {
   return (
     <main className="min-h-screen">
       <Hero />
-        <About />
+        {/*Remove about section and remove it into a separate page called About or "Company"*/}
+        {/*<About />*/}
         <CapabilitiesSection />
         <SectorsSection />
         {/*Should choose to keep either valueProps section or Unified dash section

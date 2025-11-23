@@ -102,7 +102,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="group border-[#455E89] hover:bg-[#455E89]/10 text-[#455E89]"
+                className="group border-[#455E89] hover:bg-[#455E89]/10 text-[#455E89] hover:text-red-600"
               >
                 <Play className="w-4 h-4 mr-2" />
                 Watch Platform Tour

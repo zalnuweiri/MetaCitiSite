@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 
 export function FinalCtaSection() {
   return (
-      <section className="py-15 lg:py-20 bg-gradient-to-br from-[#B7094C] via-[#723C70] to-[#0091AD] relative overflow-hidden">
+      <section className="py-15 lg:py-20 bg-gradient-to-br from-red-600 via-red-300 to-red-600 relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />

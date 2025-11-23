@@ -41,7 +41,7 @@ export function CapabilitiesSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center max-w-3xl mx-auto mb-16"
                 >
-                    <div className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-700 mb-6">
+                    <div className="inline-block px-8 py-4 text-2xl rounded-full bg-red-100 text-red-700 mb-6">
                         Capabilities
                     </div>
 

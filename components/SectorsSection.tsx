@@ -46,14 +46,14 @@ export function SectorsSection() {
                         className="space-y-12"
                     >
                         <div>
-                            <div className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-700 mb-6">
+                            <div className="inline-block px-8 py-4 text-2xl rounded-full bg-red-100 text-red-700 mb-6">
                                 Who We Serve
                             </div>
                             <h2 className="text-4xl lg:text-5xl text-gray-900 mb-6">
                                 Empowering cities and organizations to build{' '}
                                 <span className="text-red-600">safer, smarter environments</span>
                             </h2>
-                            <p className="text-xl text-gray-600 leading-relaxed">
+                            <p className="text-2xl text-gray-600 leading-relaxed">
                                 From municipal traffic departments to smart city integrators, MetaCiti serves
                                 organizations at every scale of urban mobility management.
                             </p>
@@ -73,8 +73,7 @@ export function SectorsSection() {
                                         <sector.icon className="h-6 w-6 text-red-600 group-hover:text-white transition-colors duration-300" />
                                     </div>
                                     <div>
-                                        <h3 className="text-lg text-gray-900 mb-1">{sector.title}</h3>
-                                        <p className="text-gray-600">{sector.description}</p>
+                                        <h3 className="text-2xl font-medium text-black-900 mb-1 pt-2">{sector.title}</h3>
                                     </div>
                                 </motion.div>
                             ))}
