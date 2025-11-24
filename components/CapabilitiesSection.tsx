@@ -56,18 +56,18 @@ export function CapabilitiesSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-center max-w-3xl mx-auto mb-16"
+                    className="text-left max-w-3xl  mb-16"
                 >
                     <div className="inline-block px-8 py-4 text-2xl rounded-full bg-red-100 text-red-700 mb-6">
                         Capabilities
                     </div>
 
                     <h2 className="text-4xl lg:text-5xl text-gray-900 mb-6">
-                        Comprehensive Detection &{" "}
-                        <span className="text-red-600">Analytics Suite</span>
+                         Automated Incident Detection &{" "}
+                        <span className="text-red-600">Analytics</span>
                     </h2>
 
-                    <p className="text-xl text-gray-600">
+                    <p className="text-2xl text-gray-600">
                         From incident detection to predictive analytics,
                         MetaCiti delivers the intelligence you need to manage urban mobility.
                     </p>
@@ -97,8 +97,7 @@ export function CapabilitiesSection() {
                                 <div
                                     className="
                                         absolute inset-0 pointer-events-none
-                                        bg-gradient-to-br from-[#f0f9ff] via-[#F5E7F2] to-white
-                                        opacity-0 group-hover:opacity-100
+                                        bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300 hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
                                         transition-opacity duration-300
                                         rounded-2xl
                                     "
@@ -107,16 +106,16 @@ export function CapabilitiesSection() {
                                 {/* Icon bubble */}
                                 <div
                                     className="
-                                        w-12 h-12 rounded-xl
-                                        bg-gradient-to-br from-[#723C70]/20 to-[#B7094C]/10
-                                        text-[#B7094C]
+                                        w-18 h-18 rounded-xl
+                                        bg-gradient-to-br from-red-600/20 to-red-600/10
+                                        text-red-600
                                         flex items-center justify-center mb-5
                                         group-hover:scale-110
                                         transition-transform duration-300
                                         relative z-10
                                     "
                                 >
-                                    <capability.icon className="h-6 w-6" />
+                                    <capability.icon className="h-10 w-10" />
                                 </div>
 
                                 {/* Title with hover styling */}
@@ -125,7 +124,7 @@ export function CapabilitiesSection() {
                                         text-xl font-semibold mb-3 relative z-10
                                         text-red-600
                                         transition-colors duration-300
-                                        group-hover:text-[#723C70]
+                                        group-hover:text-red-600
                                     "
                                 >
                                     {capability.title}

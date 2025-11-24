@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 
 export function FinalCtaSection() {
   return (
-      <section className="py-15 lg:py-20 bg-gradient-to-br from-red-600 via-red-300 to-red-600 relative overflow-hidden">
+      <section className="py-15 lg:py-20 bg-gradient-to-br from-red-500/90 via-red-500/90 to-red-500/90 relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
@@ -23,7 +23,7 @@ export function FinalCtaSection() {
               Ready to Transform Your City's Mobility?
             </h2>
 
-            <p className="text-xl lg:text-2xl text-white/90 mb-16 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-2xl lg:text-3xl text-white/90 mb-16 leading-relaxed max-w-4xl mx-auto">
               See how MetaCiti can help you improve safety, optimize operations,
               and make data-driven decisions for your urban network.
             </p>
@@ -31,21 +31,21 @@ export function FinalCtaSection() {
             <div className="flex flex-wrap justify-center gap-6 mb-16">
               <div className="flex items-center gap-3 text-white">
                 <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
-                <span className="text-lg">Free consultation</span>
+                <span className="text-2xl">Free consultation</span>
               </div>
               <div className="flex items-center gap-3 text-white">
                 <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
-                <span className="text-lg">Custom demo</span>
+                <span className="text-2xl">Custom demo</span>
               </div>
               <div className="flex items-center gap-3 text-white">
                 <CheckCircle2 className="h-6 w-6 flex-shrink-0" />
-                <span className="text-lg">No commitment</span>
+                <span className="text-2xl">No commitment</span>
               </div>
             </div>
 
             <div className="flex flex-wrap justify-center gap-6">
               <Button
-                  size="lg"
+                  size="xl"
                   className="bg-white hover:bg-gray-50 text-[#723C70] px-12 shadow-2xl group text-lg h-16 transition-all duration-300 hover:scale-105"
               >
                 Request Demo
@@ -53,7 +53,7 @@ export function FinalCtaSection() {
               </Button>
 
               <Button
-                  size="lg"
+                  size="xl"
                   variant="outline"
                   className="border-2 border-white text-red-600 hover:bg-white/10 px-12 text-lg h-16 transition-all duration-300 hover:scale-105"
               >

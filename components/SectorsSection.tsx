@@ -47,11 +47,11 @@ export function SectorsSection() {
                     >
                         <div>
                             <div className="inline-block px-8 py-4 text-2xl rounded-full bg-red-100 text-red-700 mb-6">
-                                Who We Serve
+                                Sectors
                             </div>
                             <h2 className="text-4xl lg:text-5xl text-gray-900 mb-6">
-                                Empowering cities and organizations to build{" "}
-                                <span className="text-red-600">safer, smarter environments</span>
+                                Empowering cities and industries to build{" "}
+                                <span className="text-red-600">smarter environments</span>
                             </h2>
                             <p className="text-2xl text-gray-600 leading-relaxed">
                                 From municipal traffic departments to smart city integrators, MetaCiti serves
@@ -83,7 +83,7 @@ export function SectorsSection() {
                                         <div
                                             className="
                                                 absolute inset-0 pointer-events-none
-                                                bg-gradient-to-br from-[#f0f9ff] via-[#F5E7F2] to-white
+                                                bg-gradient-to-br from-red-600 via-white to-red-600/50
                                                 opacity-0 group-hover:opacity-100
                                                 transition-opacity duration-300
                                                 rounded-2xl
@@ -94,8 +94,8 @@ export function SectorsSection() {
                                         <div
                                             className="
                                                 w-12 h-12 rounded-xl
-                                                bg-gradient-to-br from-[#723C70]/20 to-[#B7094C]/10
-                                                text-[#B7094C]
+                                                bg-gradient-to-br from-red-600/20 to-red-600/10
+                                                text-red-600
                                                 flex items-center justify-center mb-5
                                                 group-hover:scale-110
                                                 transition-transform duration-300

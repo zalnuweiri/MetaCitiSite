@@ -5,7 +5,7 @@ import { Navbar } from "@/components/navbar";
 
 export function Hero() {
   return (
-    <section className="min-h-screen pt-32 pb-20 px-6 lg:px-8 bg-white relative overflow-hidden">
+    <section className="min-h-screen pt-25 pb-15 px-6 lg:px-8 bg-white relative overflow-hidden">
 
       {/* NAVBAR */}
       <Navbar/>
@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large flowing wave swoosh */}
         <svg
-            className="absolute bottom-0 left-0 w-full h-auto"
+            className="absolute bottom-4a left-0 w-full h-auto"
             viewBox="0 0 1440 600"
             preserveAspectRatio="none"
             style={{ transform: 'translateY(20%)' }}
@@ -69,9 +69,9 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text Content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-50 rounded-full border border-cyan-200">
-              <div className="w-2 h-2 bg-[#0091AD] rounded-full animate-pulse" />
-              <span className="text-[#1780A1]">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 rounded-full border border-red-200">
+              <div className="w-2 h-2 bg-red-700 rounded-full animate-pulse" />
+              <span className="text-red-700 text-lg font-medium">
                 Turn Cameras into Instant Intelligence for Urban Mobility
               </span>
             </div>
@@ -82,10 +82,8 @@ export function Hero() {
               </h1>
               <p className="text-black max-w-xl text-lg lg:text-xl">
                 MetaCiti AI transforms existing city and highway cameras into a real-time engine for safety alerts,
-                mobility analytics, incident detection, and live congestion mapping. It continuously analyzes
-                intersections, corridors, districts, and campus roads, giving operators the awareness to react faster
-                and optimize network performance. All events, alerts, and flow patterns appear on Live Digital Twin
-                Maps, delivering a multiscale view of the road network—from a single junction to an entire city.
+                mobility analytics, incident detection, and live congestion mapping. All events, alerts, and flow patterns are displayed on a Live Digital Twin
+                Map.
               </p>
             </div>
 
@@ -113,12 +111,12 @@ export function Hero() {
                 Trusted by industry leaders
               </p>
               <div className="flex items-center gap-8">
-                <div className="text-black text-bold">ACME Corp</div>
-                <div className="text-black text-bold">TechGlobal</div>
+                <div className="text-black text-bold">Highway Authorities</div>
+                <div className="text-black text-bold">City Traffic Operators</div>
                 <div className="text-black text-bold">
-                  Innovate Inc
+                  Parking Enforcement
                 </div>
-                <div className="text-black text-bold">DataFlow</div>
+                <div className="text-black text-bold">Urban Planners</div>
               </div>
             </div>
           </div>

@@ -50,20 +50,18 @@ export function DashboardShowcase() {
             animate={{ y: -20, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
             className="
-    absolute -top-13.5 left-0
+    absolute -top-17 left-0
     px-10 py-3
-    rounded-2xl
+    rounded-full
     backdrop-blur-xl
-    border border-white/40
-    bg-white/70
+    bg-gradient-to-br from-red-50 to-white border border-red-100
     shadow-[0_8px_30px_rgb(0,0,0,0.12)]
   "
         >
             <div className="text-slate-900 font-semibold text-lg">
                 {dashboards[currentIndex].metrics.value}
-            </div>
-            <div className="text-slate-700 text-sm">
-                {dashboards[currentIndex].metrics.label}
+
+              <span className="text-sm font-medium pl-3">{dashboards[currentIndex].metrics.label}</span>
             </div>
         </motion.div>
 
