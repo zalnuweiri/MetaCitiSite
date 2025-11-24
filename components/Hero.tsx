@@ -14,7 +14,7 @@ export function Hero() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large flowing wave swoosh */}
         <svg
-            className="absolute bottom-4a left-0 w-full h-auto"
+            className="absolute bottom-12 left-0 w-full h-auto"
             viewBox="0 0 1440 600"
             preserveAspectRatio="none"
             style={{ transform: 'translateY(20%)' }}
