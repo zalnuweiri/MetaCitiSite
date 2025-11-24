@@ -6,9 +6,14 @@ import { Button } from './ui/button';
 
 export function FinalCtaSection() {
   return (
-      <section className="py-15 lg:py-20 bg-gradient-to-br from-red-500/90 via-red-500/90 to-red-500/90 relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <section className="
+    py-15 lg:py-20
+    bg-gradient-to-br
+    from-[#0f172a] via-[#1e293b] to-[#334155]
+    relative overflow-hidden
+">        {/* Background pattern */}
+        <div
+            className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
 
         <div className="container mx-auto px-6 lg:px-16 relative z-10">
@@ -46,7 +51,7 @@ export function FinalCtaSection() {
             <div className="flex flex-wrap justify-center gap-6">
               <Button
                   size="xl"
-                  className="bg-white hover:bg-gray-50 text-[#723C70] px-12 shadow-2xl group text-lg h-16 transition-all duration-300 hover:scale-105"
+                  className="bg-white hover:bg-gray-50 text-red-600 hover:text-white hover:border hover:border-white hover:border-2 px-12 shadow-2xl group text-lg h-16 hover:bg-white/10 transition-all duration-300 hover:scale-105"
               >
                 Request Demo
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -57,7 +62,7 @@ export function FinalCtaSection() {
                   variant="outline"
                   className="border-2 border-white text-red-600 hover:bg-white/10 px-12 text-lg h-16 transition-all duration-300 hover:scale-105"
               >
-                <Calendar className="mr-2 h-5 w-5" />
+                <Calendar className="mr-0 h-5 w-5" />
                 Schedule Call
               </Button>
             </div>

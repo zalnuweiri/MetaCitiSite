@@ -87,7 +87,8 @@ export function CapabilitiesSection() {
                             <div
                                 className="
                                     relative h-full p-8 rounded-2xl
-                                    bg-white border border-gray-200
+                                    bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300
+                                    hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
                                     transition-all duration-300
                                     hover:-translate-y-2 hover:shadow-xl
                                     hover:border-red-300 hover:shadow-red-600/10
@@ -98,6 +99,7 @@ export function CapabilitiesSection() {
                                     className="
                                         absolute inset-0 pointer-events-none
                                         bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300 hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
+                                        opacity-0 group-hover:opacity-100
                                         transition-opacity duration-300
                                         rounded-2xl
                                     "
@@ -110,8 +112,8 @@ export function CapabilitiesSection() {
                                         bg-gradient-to-br from-red-600/20 to-red-600/10
                                         text-red-600
                                         flex items-center justify-center mb-5
-                                        group-hover:scale-110
-                                        transition-transform duration-300
+                                        group-hover:bg-red-600 group-hover:scale-110
+                                        transition-all duration-300 group-hover:text-white
                                         relative z-10
                                     "
                                 >
