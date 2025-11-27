@@ -93,7 +93,7 @@ export function CapabilitiesSection() {
                                     hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
                                     transition-all duration-300
                                     hover:-translate-y-2 hover:shadow-xl
-                                    hover:border-red-300 hover:shadow-red-600/10 max-w-[320px] mx-auto
+                                    hover:border-red-300 hover:shadow-red-600/10
                                 "
                             >
                                 {/* gradient wash (old file) CHANGE HERE */}
@@ -135,9 +135,9 @@ export function CapabilitiesSection() {
                                 </h3>
 
                                 {/* Description */}
-                                {/*<p className="text-gray-600 leading-relaxed relative z-10">
+                                <p className="text-gray-600 leading-relaxed relative z-10">
                                     {capability.description}
-                                </p>*/}
+                                </p>
                             </div>
                         </motion.div>
                     ))}
