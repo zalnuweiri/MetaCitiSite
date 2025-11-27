@@ -11,7 +11,8 @@ import {
     Layers,
     Target,
     Repeat1,
-    CarFront
+    CarFront,
+    Zap
 } from "lucide-react";
 
 const capabilities = [
@@ -31,7 +32,7 @@ const capabilities = [
     { icon: UserX, title: "Wrong-Way Driving", description: "Immediate alerts for dangerous counter-flow movement" },
     { icon: Truck, title: "Flow Analytics", description: "Live insights into traffic speed, volume, and density" },
     { icon: BarChart3, title: "Congestion Maps", description: "Clear visualization of bottlenecks across the network" },
-    { icon: Map, title: "Movement Tracking", description: "Multi-modal tracking of vehicles, pedestrians, and cyclists" },
+    { icon: Zap, title: "Movement Tracking", description: "Multi-modal tracking of vehicles, pedestrians, and cyclists" },
     { icon: Target, title: "Heatmaps", description: "Activity heatmaps showing high-traffic zones at a glance" },
     { icon: Repeat1, title: "Event Replay", description: "Timestamped video playback for incident reconstruction" },
     { icon: Layers, title: "VMS Integration", description: "Direct connection to roadside signs for automated messaging" },
