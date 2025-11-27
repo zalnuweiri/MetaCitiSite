@@ -84,6 +84,7 @@ export function CapabilitiesSection() {
                             transition={{ duration: 0.5, delay: index * 0.08 }}
                             className="group cursor-pointer"
                         >
+                            {/* CHANGE HERE */}
                             <div
                                 className="
                                     relative h-full p-8 rounded-2xl
@@ -91,10 +92,10 @@ export function CapabilitiesSection() {
                                     hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
                                     transition-all duration-300
                                     hover:-translate-y-2 hover:shadow-xl
-                                    hover:border-red-300 hover:shadow-red-600/10
+                                    hover:border-red-300 hover:shadow-red-600/10 max-w-[320px] mx-auto
                                 "
                             >
-                                {/* gradient wash (old file) */}
+                                {/* gradient wash (old file) CHANGE HERE */}
                                 <div
                                     className="
                                         absolute inset-0 pointer-events-none
@@ -105,10 +106,10 @@ export function CapabilitiesSection() {
                                     "
                                 />
 
-                                {/* Icon bubble */}
+                                {/* Icon bubble CHANGE HERE*/}
                                 <div
                                     className="
-                                        w-18 h-18 rounded-xl
+                                        w-15 h-15 rounded-xl
                                         bg-gradient-to-br from-red-600/20 to-red-600/10
                                         text-red-600
                                         flex items-center justify-center mb-5
@@ -133,9 +134,9 @@ export function CapabilitiesSection() {
                                 </h3>
 
                                 {/* Description */}
-                                <p className="text-gray-600 leading-relaxed relative z-10">
+                                {/*<p className="text-gray-600 leading-relaxed relative z-10">
                                     {capability.description}
-                                </p>
+                                </p>*/}
                             </div>
                         </motion.div>
                     ))}
