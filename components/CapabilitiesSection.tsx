@@ -85,7 +85,7 @@ export function CapabilitiesSection() {
                         className="w-[35%] h-[35%] rounded-xl object-cover"
                     />
                     <video
-                        src="otto3.mp4"
+                        src="otto2.mp4"
                         autoPlay
                         loop
                         muted
