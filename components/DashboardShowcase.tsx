@@ -14,7 +14,7 @@ const dashboards = [
   {
     id: 2,
     title: "Smart City Monitoring",
-    image: "dash2.png",
+    image: "dashScreen.png",
     metrics: { value: "45K+", label: "Active Sensors" }
   },
   {
