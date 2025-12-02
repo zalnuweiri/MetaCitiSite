@@ -76,31 +76,45 @@ export function CapabilitiesSection() {
 
                 {/* Small image row */}
                 <div className="flex gap-6 mb-8 mr-25">
+
+                    {/* Video 1 */}
                     <video
                         src="otto1.mp4"
-                        autoPlay
-                        loop
                         muted
                         playsInline
-                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                        onMouseEnter={(e) => e.currentTarget.play()}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.pause();
+                        }}
+                        className="w-[35%] h-[35%] rounded-xl object-cover cursor-pointer"
                     />
+
+                    {/* Video 2 */}
                     <video
                         src="otto2.mp4"
-                        autoPlay
-                        loop
                         muted
                         playsInline
-                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                        onMouseEnter={(e) => e.currentTarget.play()}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.pause();
+                        }}
+                        className="w-[35%] h-[35%] rounded-xl object-cover cursor-pointer"
                     />
+
+                    {/* Video 3 */}
                     <video
                         src="otto3.mp4"
-                        autoPlay
-                        loop
                         muted
                         playsInline
-                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                        onMouseEnter={(e) => e.currentTarget.play()}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.pause();
+                        }}
+                        className="w-[35%] h-[35%] rounded-xl object-cover cursor-pointer"
                     />
+
                 </div>
+
 
 
                 {/* Cards */}
