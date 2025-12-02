@@ -36,10 +36,10 @@ export function SectorsSection() {
         <section id="sectors" className="py-10 lg:pt-10 lg:py-15 bg-white relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-12 relative z-10">
 
-                {/* ================== TOP ROW (TITLE + IMAGE) ================== */}
+                {/* ================== NEW TOP ROW (TITLE LEFT + PILLS RIGHT) ================== */}
                 <div className="grid lg:grid-cols-2 gap-16 items-start">
 
-                    {/* LEFT – Title & description */}
+                    {/* LEFT — Title */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -64,72 +64,38 @@ export function SectorsSection() {
                         </div>
                     </motion.div>
 
-                    {/* RIGHT – Image */}
+                    {/* RIGHT — Sector Pills (UnifiedDashboard-style) */}
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.7 }}
-                        className="relative self-start"
+                        className="grid grid-cols-2 gap-4 p-15"
                     >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-                            <img src="otnmitest3.webp" className="w-full h-auto" />
-                        </div>
-
-                        <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-red-100 rounded-full blur-3xl opacity-30 -z-10" />
+                        {sectors.map((sector, index) => (
+                            <motion.div
+                                key={sector.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className={`
+                flex items-center gap-3 p-4 rounded-xl
+                bg-gray-100 border border-gray-200
+                hover:border-red-300 hover:bg-red-50
+                transition-all duration-300
+                ${index === sectors.length - 1 ? "col-span-2" : ""}
+            `}
+                            >
+                                <sector.icon className="h-5 w-5 text-red-600 flex-shrink-0" />
+                                <span className="text-base text-gray-700 font-medium">
+                {sector.title}
+            </span>
+                            </motion.div>
+                        ))}
                     </motion.div>
-                </div>
 
-                {/* ================== FULL-WIDTH SECTOR CARDS ================== */}
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {sectors.map((sector, index) => (
-                        <motion.div
-                            key={sector.title}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.08 }}
-                            className="group cursor-pointer"
-                        >
-                            <div className="
-                                relative h-full p-6 rounded-2xl
-                                bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300
-                                hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
-                                transition-all duration-300
-                                hover:-translate-y-2 hover:shadow-xl
-                                hover:border-red-300 hover:shadow-red-600/10
 
-                            ">
-                                <div className="
-                                    absolute inset-0 pointer-events-none
-                                    bg-gradient-to-br from-red-50 to-white
-                                    opacity-0 group-hover:opacity-100
-                                    transition-opacity duration-300
-                                    rounded-2xl
-                                " />
-
-                                <div className="
-                                    w-12 h-12 rounded-xl
-                                    bg-gradient-to-br from-red-600/20 to-red-600/10
-                                    text-red-600 mb-5
-                                    flex items-center justify-center
-                                    group-hover:bg-red-600 group-hover:scale-110
-                                    transition-all duration-300
-                                    relative z-10
-                                ">
-                                    <sector.icon className="h-6 w-6 text-red-600 group-hover:text-white transition-colors duration-300" />
-                                </div>
-
-                                <h3 className="text-xl font-medium mb-2 relative z-10 group-hover:text-red-600">
-                                    {sector.title}
-                                </h3>
-
-                                <p className="text-gray-600 relative z-10">
-                                    {sector.description}
-                                </p>
-                            </div>
-                        </motion.div>
-                    ))}
                 </div>
             </div>
         </section>

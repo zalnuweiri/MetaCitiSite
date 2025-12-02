@@ -74,8 +74,37 @@ export function CapabilitiesSection() {
                     </p>
                 </motion.div>
 
+                {/* Small image row */}
+                <div className="flex gap-6 mb-8 mr-25">
+                    <video
+                        src="otto1.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                    />
+                    <video
+                        src="otto3.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                    />
+                    <video
+                        src="otto3.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-[35%] h-[35%] rounded-xl object-cover"
+                    />
+                </div>
+
+
                 {/* Cards */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 lg:gap-x-8 lg:gap-y-2">
                     {capabilities.map((capability, index) => (
                         <motion.div
                             key={capability.title}
@@ -85,63 +114,65 @@ export function CapabilitiesSection() {
                             transition={{ duration: 0.5, delay: index * 0.08 }}
                             className="group cursor-pointer"
                         >
-                            {/* CHANGE HERE */}
                             <div
                                 className="
-                                    relative h-full p-8 rounded-2xl
-                                    bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300
-                                    hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
-                                    transition-all duration-300
-                                    hover:-translate-y-2 hover:shadow-xl
-                                    hover:border-red-300 hover:shadow-red-600/10
-                                "
+                    relative h-[95%] p-8 rounded-2xl
+                    bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300
+                    hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
+                    hover:-translate-y-2
+                "
                             >
-                                {/* gradient wash (old file) CHANGE HERE */}
+
+                                {/* gradient wash */}
                                 <div
                                     className="
-                                        absolute inset-0 pointer-events-none
-                                        bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300 hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
-                                        opacity-0 group-hover:opacity-100
-                                        transition-opacity duration-300
-                                        rounded-2xl
-                                    "
+                        absolute inset-0 pointer-events-none
+                        bg-gradient-to-br from-red-50 to-white border border-red-100
+                        opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                        rounded-2xl
+                    "
                                 />
 
-                                {/* Icon bubble CHANGE HERE*/}
-                                <div
-                                    className="
-                                        w-15 h-15 rounded-xl
-                                        bg-gradient-to-br from-red-600/20 to-red-600/10
-                                        text-red-600
-                                        flex items-center justify-center mb-5
-                                        group-hover:bg-red-600 group-hover:scale-110
-                                        transition-all duration-300 group-hover:text-white
-                                        relative z-10
-                                    "
-                                >
-                                    <capability.icon className="h-10 w-10" />
-                                </div>
+                                {/* === ICON + TITLE ROW === */}
+                                <div className="flex items-center gap-4 mb-5 relative z-10">
 
-                                {/* Title with hover styling */}
-                                <h3
-                                    className="
-                                        text-xl font-semibold mb-3 relative z-10
-                                        text-red-600
-                                        transition-colors duration-300
-                                        group-hover:text-red-600
-                                    "
-                                >
-                                    {capability.title}
-                                </h3>
+                                    {/* Icon bubble */}
+                                    <div
+                                        className="
+                            w-15 h-15 rounded-xl
+                            bg-gradient-to-br from-red-600/20 to-red-600/10
+                            text-red-600
+                            flex items-center justify-center
+                            group-hover:bg-red-600 group-hover:scale-110 group-hover:text-white
+                            transition-all duration-300
+                        "
+                                    >
+                                        <capability.icon className="h-10 w-10" />
+                                    </div>
+
+                                    {/* Title */}
+                                    <h3
+                                        className="
+                            text-xl font-semibold
+                            text-red-600
+                            transition-colors duration-300
+                            group-hover:text-red-600
+                        "
+                                    >
+                                        {capability.title}
+                                    </h3>
+                                </div>
 
                                 {/* Description */}
                                 <p className="text-gray-600 leading-relaxed relative z-10">
                                     {capability.description}
                                 </p>
+
                             </div>
                         </motion.div>
                     ))}
                 </div>
+
             </div>
         </section>
     );

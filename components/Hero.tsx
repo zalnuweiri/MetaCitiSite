@@ -78,7 +78,7 @@ export function Hero() {
 
             <div className="space-y-6">
               <h1 className="text-black font-semibold text-5xl 2xl:text-6xl">
-                MetaCiti — SaaS Platform for Urban Mobility & Traffic Intelligence
+                MetaCiti — AI Platform for Urban Mobility & Traffic Intelligence
               </h1>
               <p className="text-black max-w-xl text-lg lg:text-xl">
                 MetaCiti AI transforms existing city and highway cameras into a real-time engine for safety alerts,

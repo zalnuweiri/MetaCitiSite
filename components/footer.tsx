@@ -2,6 +2,7 @@
 
 import { OttonomiLogo } from "@/components/ottonomi-logo";
 import { Github, Twitter, Linkedin, Youtube } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   const solutions = ["Real-Time Traffic", "Urban Planning", "Incident Detection", "Predictive Analytics"];
@@ -23,7 +24,13 @@ export function Footer() {
             {/* Brand Column */}
             <div className="lg:col-span-2 space-y-6">
               <div className="flex items-center gap-3">
-                <OttonomiLogo size="lg" />
+                <Image
+                    src="/ottologo.png"
+                    alt="Ottonomi Logo"
+                    width={250}  // adjust as needed
+                    height={150}  // adjust as needed
+                    className="object-contain"
+                />
               </div>
 
               <p className="text-gray-300/80 max-w-sm">

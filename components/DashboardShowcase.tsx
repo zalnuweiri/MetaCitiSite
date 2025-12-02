@@ -65,43 +65,29 @@ export function DashboardShowcase() {
             </div>
         </motion.div>
 
-        {/* Main Dashboard Display */}
-      <div className="relative h-[300px] rounded-2xl overflow-hidden bg-gradient-to-br from-[#723C70]/20 to-[#455E89]/20 shadow-2xl border border-[#455E89]/30">
+      {/* Main Dashboard Display */}
+      <div className="relative w-full max-w-5xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.05 }}
-            transition={{ duration: 0.6 }}
-            className="absolute inset-0"
-            >
+              key={currentIndex}
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.03 }}
+              transition={{ duration: 0.6 }}
+              className="relative"
+          >
             <ImageWithFallback
-              src={dashboards[currentIndex].image}
-              alt={dashboards[currentIndex].title}
-              className="w-full h-full object-contain bg-black/5"
+                src={dashboards[currentIndex].image}
+                alt={dashboards[currentIndex].title}
+                className="w-full h-auto rounded-2xl"
             />
-            
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-            {/* Metric Card */}
-            {/*<motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="absolute bottom-6 right-13 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-[#0091AD]/30"
-            >
-              <div className="text-slate-900">{dashboards[currentIndex].metrics.value}</div>
-              <div className="text-slate-600">{dashboards[currentIndex].metrics.label}</div>
-            </motion.div>*/}
+            {/* Remove overlay if you want the raw image */}
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /> */}
           </motion.div>
         </AnimatePresence>
-
-        {/* Decorative Elements - Updated colors */}
-        <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#0091AD] rounded-full blur-3xl opacity-40" />
-        <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#B7094C] rounded-full blur-3xl opacity-30" />
       </div>
+
 
       {/* Thumbnail Segments */}
       <div className="flex gap-3 mt-6">
