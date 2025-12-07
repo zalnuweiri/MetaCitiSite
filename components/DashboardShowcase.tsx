@@ -50,7 +50,7 @@ export function DashboardShowcase() {
             animate={{ y: -20, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
             className="
-    absolute -top-17 left-0
+    absolute -top-10  left-0
     px-10 py-3
     rounded-full
     backdrop-blur-xl

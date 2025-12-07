@@ -81,9 +81,8 @@ export function Hero() {
                 MetaCiti — AI Platform for Urban Mobility & Traffic Intelligence
               </h1>
               <p className="text-black max-w-xl text-lg lg:text-xl">
-                MetaCiti AI transforms existing city and highway cameras into a real-time engine for safety alerts,
-                mobility analytics, incident detection, and live congestion mapping. All events, alerts, and flow patterns are displayed on a Live Digital Twin
-                Map.
+                MetaCiti AI transforms city and highway cameras into a live digital map enabling safety alerts, continuous localization,
+                automated incident detection, live congestion mapping, and mobility analytics. All events, alerts, analytics, and flow patterns are provided through an Operator Dashboard.
               </p>
             </div>
 

@@ -19,7 +19,7 @@ export function UnifiedDashboard({ image }: UnifiedDashboardProps) {
     ];
 
     return (
-        <section className="py-8 lg:py-15 bg-gradient-to-br from-red-900/90 via-red-900/90 to-red-900/90 relative overflow-hidden">
+        <section className="py-8 lg:py-15 bg-[#48424C] relative overflow-hidden">
             {/* Background pattern */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -33,7 +33,7 @@ export function UnifiedDashboard({ image }: UnifiedDashboardProps) {
                         transition={{ duration: 0.7 }}
                         className="relative"
                     >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
+                        <div className="relative  overflow-hidden shadow-2xl border border-gray-700">
                             <ImageWithFallback
                                 src={image}
                                 alt="Unified Dashboard"
@@ -43,8 +43,8 @@ export function UnifiedDashboard({ image }: UnifiedDashboardProps) {
                         </div>
 
                         {/* Decorative glow */}
-                        <div className="absolute -top-8 -left-8 w-64 h-64 bg-red-600/20 rounded-full blur-3xl" />
-                        <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-red-500/10 rounded-full blur-3xl" />
+                        <div className="absolute -top-8 -left-8 w-64 h-64 " />
+                        <div className="absolute -bottom-8 -right-8 w-64 h-64 " />
                     </motion.div>
 
                     {/* Right side - Content */}
@@ -56,16 +56,15 @@ export function UnifiedDashboard({ image }: UnifiedDashboardProps) {
                         className="space-y-8"
                     >
                         <div>
-                            <div className="inline-block px-4 py-2 rounded-full bg-[#93c5fd]/20 text-[#93c5fd] border border-white/30 mb-6">
+                            <div className="inline-block text-xl px-4 py-2 rounded-full bg-[#93c5fd]/20 text-[#93c5fd] border border-white/30 mb-6">
                                 Unified Dashboard
                             </div>
                             <h2 className="text-4xl lg:text-5xl text-white mb-6">
                                 One Interface for{' '}
                                 <span className="text-[#93c5fd]">Complete Visibility</span>
                             </h2>
-                            <p className="text-xl text-gray-300 leading-relaxed">
-                                MetaCiti operates through a unified dashboard that combines live video, AI overlays,
-                                alerts, and Live Digital Twin Maps in a single interface. Operators can track movement
+                            <p className="text-xl text-white leading-relaxed">
+                                Operators can utilize the MetaCiti dashboard to track movement
                                 across multiple cameras, review past events, monitor congestion patterns, and respond
                                 to incidents instantly.
                             </p>

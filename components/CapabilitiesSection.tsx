@@ -103,7 +103,7 @@ export function CapabilitiesSection() {
 
                     {/* Video 3 */}
                     <video
-                        src="otto3.mp4"
+                        src="otto23.mp4"
                         muted
                         playsInline
                         onMouseEnter={(e) => e.currentTarget.play()}
@@ -131,8 +131,8 @@ export function CapabilitiesSection() {
                             <div
                                 className="
                     relative h-[95%] p-8 rounded-2xl
-                    bg-gradient-to-br from-red-50 to-white border border-red-100 hover:border-red-300
-                    hover:shadow-xl hover:shadow-red-600/10 transition-all duration-300
+                    bg-gray-100 border border-gray-100 hover:border-red-300
+                    hover:shadow-xl hover:shadow-[#b8d4e3]/50 transition-all duration-300
                     hover:-translate-y-2
                 "
                             >
@@ -157,7 +157,7 @@ export function CapabilitiesSection() {
                             bg-gradient-to-br from-red-600/20 to-red-600/10
                             text-red-600
                             flex items-center justify-center
-                            group-hover:bg-red-600 group-hover:scale-110 group-hover:text-white
+                            group-hover:bg-[#B62727] group-hover:scale-110 group-hover:text-white
                             transition-all duration-300
                         "
                                     >
