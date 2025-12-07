@@ -20,7 +20,7 @@ const dashboards = [
   {
     id: 3,
     title: "Data Visualization",
-    image: "dash1.png",
+    image: "dashmap.png",
     metrics: { value: "Real-time", label: "Processing" }
   }
 ];
