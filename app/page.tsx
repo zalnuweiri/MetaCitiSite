@@ -29,7 +29,7 @@ export default function HomePage() {
          Regardless which one we choose, this one should have a diff background to
          break up the monotony of the white*/}
         {/*<ValueProps />*/}
-        <UnifiedDashboard  image={"dashboard.png"}/>
+        <UnifiedDashboard  image={"dashmap.png"}/>
         {/*<ProblemSolutionSection />*/}
         {/*<FeaturesSection />*/}
       <BenefitsSection />
