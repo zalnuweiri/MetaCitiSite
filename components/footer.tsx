@@ -39,10 +39,19 @@ export function Footer() {
 
               {/* Social Links */}
               <div className="flex gap-4 pt-2">
-                {[Twitter, Linkedin, Github, Youtube].map((Icon, i) => (
+                {[Linkedin].map((Icon, i) => (
                     <a
                         key={i}
-                        href="#"
+                        href="https://www.linkedin.com/company/ottonomi-ai/posts/?feedView=all"
+                        className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                ))}
+                {[Github].map((Icon, i) => (
+                    <a
+                        key={i}
+                        href="https://github.com/OttonomiAI"
                         className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                     >
                       <Icon className="w-5 h-5" />
