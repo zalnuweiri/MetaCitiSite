@@ -36,7 +36,7 @@ const capabilities = [
     { icon: Zap, title: "Traffic Flow & Speed Analytics", description: "Multi-modal tracking of vehicles, pedestrians, and cyclists" },
     { icon: Target, title: "Congestion Maps & Bottleneck Analysis", description: "Activity heatmaps showing high-traffic zones at a glance" },
     { icon: Repeat1, title: "Multimodal Movement Tracking", description: "Timestamped video playback for incident reconstruction" },
-    { icon: Layers, title: "Intersection Performance Monitoring (ATSPM-Adjacent)", description: "Direct connection to roadside signs for automated messaging" },
+    { icon: Layers, title: "Intersection Performance Monitoring (ATSPM)", description: "Direct connection to roadside signs for automated messaging" },
     { icon: Layers, title: "Transit Priority & Service Reliability Support", description: "Direct connection to roadside signs for automated messaging" },
     { icon: Layers, title: "Emergency Vehicle Priority Support", description: "Direct connection to roadside signs for automated messaging" },
     { icon: Layers, title: "Event Replay & Incident Review", description: "Direct connection to roadside signs for automated messaging" },
@@ -261,7 +261,7 @@ export function CapabilitiesSection() {
 
 
                 {/* Cards */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 lg:gap-x-8 lg:gap-y-2">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 lg:gap-x-8 lg:gap-y-2 2xl:gap-x-8 2xl:gap-y-0">
                     {capabilities.map((capability, index) => (
                         <motion.div
                             key={capability.title}
@@ -273,7 +273,7 @@ export function CapabilitiesSection() {
                         >
                             <div
                                 className="
-                    relative h-[95%] p-8 rounded-2xl
+                    relative h-[95%] 2xl:h-[85%] p-8 rounded-2xl
                     bg-gray-100 border border-gray-100 hover:border-red-300
                     hover:shadow-xl hover:shadow-[#b8d4e3]/50 transition-all duration-300
                     hover:-translate-y-2
