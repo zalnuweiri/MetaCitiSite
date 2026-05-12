@@ -39,7 +39,7 @@ export function DashboardShowcase() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % dashboards.length);
-    }, 4000);
+    }, 9000);
     return () => clearInterval(interval);
   }, []);
 

@@ -124,7 +124,7 @@ export function Hero() {
 ">
                                   MetaCiti
                                   <span className="block text-gray-900">
-    AI Platform for Urban Mobility
+    AI Urban Mobility Platform
   </span>
                               </h1>
                               <p className="text-black max-w-xl text-lg lg:text-xl">
@@ -174,7 +174,7 @@ export function Hero() {
                       </div>
 
                       {/* Right: Dashboard Showcase */}
-                      <div className="2xl:scale-[1.05] 2xl:origin-top">
+                      <div className="2xl:scale-[1.05] 2xl:origin-top 2xl:pb-14">
                           <DashboardShowcase/>
                       </div>
                   </div>

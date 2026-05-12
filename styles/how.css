@@ -11,17 +11,8 @@
 
 /* SECTION */
 .section{padding:90px 0}
-.section-head{max-width:720px;margin-bottom:40px}
+.section-head{max-width:790px;margin-bottom:40px}
 .section-head.center{text-align:center;margin:auto;margin-bottom:40px}
-.section-label{
-    color:var(--primary);
-    font-size:12px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:.05em
-}
-.section-head h2{font-size:40px;margin:6px 0 10px}
-.section-head p{color:var(--text-secondary);font-size:18px}
 
 /* STEPS */
 .steps{
